@@ -1,0 +1,28 @@
+[project]
+name = "agentico"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Codeincraft", email = "codeincraft@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "langchain>=1.4.3",
+    "langchain-groq>=1.1.3",
+    "langgraph>=1.2.13",
+    "langsmith>=0.14.4",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+agentico = "agentico:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+]
