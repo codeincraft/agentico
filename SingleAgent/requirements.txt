@@ -7,6 +7,7 @@ tavily-python
 python-dotenv
 langchainhub
 streamlit
+langchain-groq
 
 # langchain
 # langchain-core
